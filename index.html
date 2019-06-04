@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Double MM Program</title>
+    </head>
+    <body> 
+        <div id="inputBlock">
+                <h2>MM Cal</h2>
+                <hr>
+                <label for="fname">Balance: </label><br/>
+                <input id="baLance"></input>
+                <label for="fname">First Level Price: </label><br/>
+                <input id="lv1"></input>
+                <br/>
+                <label for="fname">Second Level Price: </label><br/>
+                <input id="lv2"></input>
+                <label for="fname">Leverage: </label><br/>
+                <input id="leverage" value="200"></input>
+                <label for="fname">Standard Lot: </label><br/>
+                <input id="stdLot" value="100000"></input>
+                <label for="fname">Profit Percent : </label><br/>
+                <input id="profit" value="0.012"></input>
+                <label for="fname">Commission Per One Lot : </label><br/>
+                <input id="commission" value="7.5"></input>
+                <button class="button" onClick="runCal()">Submit</button>
+                <hr>
+                <div id = "result">
+                    <h3 style="text-decoration: underline;text-align: center;">Result</h3>
+                    <p>Target: <span id="target">6</span> $</p>
+                    <p>Balance Left: <span id="balanceLeft">6</span> $</p>
+                    <p>Max Volume: <span id="maxVolume">6</span> lot</p>
+                    <p>Recommend Lot: <span id="recommendLot">6</span> lot</p>
+                    <p>Max Recommend Lot: <span id="maxRecommendLot">6</span> lot</p>
+                    <hr>
+                    <p>Level 1 Price: 
+                        <span id="lv1Price" style="font-weight:bold;">
+                            1.1260
+                        </span> 
+                        / TP Level 1: 
+                        <span id="lv1Tp" style="font-weight:bold;">
+                            1.1145
+                        </span>
+                    <p>
+                    <p>Level 2 Price: 
+                        <span id="lv2Price" style="font-weight:bold;">
+                            1.1260
+                        </span> 
+                        / TP Level 2:
+                         <span id="lv2Tp" style="font-weight:bold;">
+                            1.1145
+                        </span>
+                    <p>
+                    <p>Level 3 Price: 
+                        <span id="lv3Price" style="font-weight:bold;">
+                            1.1260
+                        </span> / TP Level 3: 
+                        <span id="lv3Tp" style="font-weight:bold;">
+                            1.1145
+                        </span>
+                    <p>
+                </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
